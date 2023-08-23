@@ -17,10 +17,10 @@ function App() {
     ];
     return (
         <div className="App">
-            {/* {todos.map((todo) => {
+            {todos.map((todo) => {
                 return <Todo todo={todo} />;
             })}
-            <Counter initialCount={0} /> */}
+            <Counter initialCount={0} />
         </div>
     );
 }
