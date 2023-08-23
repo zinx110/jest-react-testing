@@ -27,14 +27,14 @@ jobs:
 
             - name: install dependencies
               run: |
-                  cd jest-react-testing
+                  # cd jest-react-testing
                   npm ci
             - name: Build the app
               run: |
-                  cd jest-react-testing
+                  # cd jest-react-testing
                   npm run build
             - name: Start the app
               run: |
-                  cd jest-react-testing
+                  # cd jest-react-testing
                   npm start &&
                   npm wait-on --timeout 60000
