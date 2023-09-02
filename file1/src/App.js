@@ -1,5 +1,6 @@
 import "./App.css";
 import Counter from "./components/Counter";
+import Tutorial3 from "./components/Tutorial3";
 import Todo from "./components/todo";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                 return <Todo todo={todo} />;
             })}
             <Counter initialCount={0} />
+            <Tutorial3 />
         </div>
     );
 }

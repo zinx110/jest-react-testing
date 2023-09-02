@@ -36,5 +36,5 @@ jobs:
             - name: Start the app
               run: |
                   # cd jest-react-testing
-                  npm start &&
-                  npm wait-on --timeout 60000
+                  # npm start &&
+                  # npm wait-on --timeout 60000

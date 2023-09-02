@@ -1,0 +1,20 @@
+{
+    "name": "file2",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "test": "jest --watchAll --verbose --coverage",
+        "e2e": "cypress open"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.2",
+        "vite": "^4.4.5"
+    },
+    "dependencies": {
+        "jest": "^29.6.4"
+    }
+}
