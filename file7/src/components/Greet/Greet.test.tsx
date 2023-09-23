@@ -8,11 +8,12 @@ describe("Greet Component Tests", () => {
         const helloText = screen.getByText(/hello/i);
         expect(helloText).toBeInTheDocument();
     });
-    it("Greet renders correctly(2)", () => {
+    it("Greet renders correctly(2)", async () => {
         const GreetComp = TestRenderer.create(<Greet />);
         const root = GreetComp.root;
+        // eslint-disable-next-line testing-library/await-async-query, testing-library/no-node-access
         const helloText = root.findAllByType("div")[0].children[0];
-        console.log(helloText);
+
         expect(helloText).toBe("Hello");
     });
 });
