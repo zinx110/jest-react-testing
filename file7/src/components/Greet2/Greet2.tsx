@@ -6,5 +6,5 @@ type GreetProps = {
 
 export const Greet2 = ({ name }: GreetProps) => {
     console.log("saud");
-    return <div>Hello {name}</div>;
+    return <div>Hello {name ? name : "Guest"}</div>;
 };
