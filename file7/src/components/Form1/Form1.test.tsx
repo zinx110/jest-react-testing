@@ -52,6 +52,34 @@ describe("Form1 (testing-library/react)", () => {
         const nameElement = screen.getByPlaceholderText("Full Name");
         expect(nameElement).toBeInTheDocument();
     });
+
+    it("getByText", () => {
+        render(<Form1 />);
+        const paragraphElement = screen.getByText("All fields are mandatory");
+        expect(paragraphElement).toBeInTheDocument();
+        const labelText = screen.getByText("Job Application Form");
+        expect(labelText).toBeInTheDocument();
+    });
+    it("getByDisplayValue", () => {
+        render(<Form1 />);
+        const valuedElement = screen.getByDisplayValue("zinx");
+        expect(valuedElement).toBeInTheDocument();
+    });
+    it("getByAltText", () => {
+        render(<Form1 />);
+        const altText = screen.getByAltText("alt text");
+        expect(altText).toBeInTheDocument();
+    });
+    it("getByTitle", () => {
+        render(<Form1 />);
+        const titleText = screen.getByTitle("close");
+        expect(titleText).toBeInTheDocument();
+    });
+    it("getByTestId", () => {
+        render(<Form1 />);
+        const element = screen.getByTestId("testId1");
+        expect(element).toBeInTheDocument();
+    });
 });
 
 describe("Form1 (react-test-renderer)", () => {

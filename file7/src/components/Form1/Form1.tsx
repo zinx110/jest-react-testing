@@ -1,12 +1,21 @@
 export const Form1 = () => {
     return (
         <>
+            <div data-testid="testId1">custom div</div>
             <h1>Job Application Form</h1>
             <h2>Section 1</h2>
+            <p>All fields are mandatory</p>
+            <span title="close">X</span>
+            <img src="" alt="alt text" />
             <form>
                 <div>
                     <label htmlFor="name">Name</label>
-                    <input type="test" id="name" placeholder="Full Name" />
+                    <input
+                        type="test"
+                        id="name"
+                        placeholder="Full Name"
+                        value="zinx"
+                    />
                 </div>
                 <div>
                     <label htmlFor="bio">Bio</label>
